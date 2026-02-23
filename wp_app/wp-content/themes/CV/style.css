@@ -1,0 +1,69 @@
+:root{
+    --almond-silk: #c1aba6ff;
+    --mauve-shadow: #533b4dff;
+    --hot-pink-web: #f564a9ff;
+    --pink-mist: #faa4bdff;
+    --champagne-mist: #fae3c6ff;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: var(--almond-silk);
+    color: var(--mauve-shadow);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+    
+}
+
+.test{
+
+    display: flex;
+    flex-flow: row-reverse nowrap;
+}
+
+header li {
+    list-style: none;
+}
+
+
+.test .navbar{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.test .navbar li{
+    margin: 0;
+}
+
+.test .navbar li a{
+    color: var(--mauve-shadow);
+    text-decoration: none;
+    padding: 0.35rem 0.6rem;
+    border-radius: 4px;
+}
+
+.test .navbar li a:hover{
+    background: var(--pink-mist);
+    color: #fff;
+}
+
+
+
