@@ -28,10 +28,10 @@ header{
     
 }
 
-.test{
+.container_nav{
 
     display: flex;
-    flex-flow: row-reverse nowrap;
+justify-content: space-around;
 }
 
 header li {
@@ -39,28 +39,27 @@ header li {
 }
 
 
-.test .navbar{
+.container_nav .navbar{
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     gap: 1rem;
     align-items: center;
-    justify-content: flex-end;
 }
 
-.test .navbar li{
+.container_nav .navbar li{
     margin: 0;
 }
 
-.test .navbar li a{
+.container_nav .navbar li a{
     color: var(--mauve-shadow);
     text-decoration: none;
     padding: 0.35rem 0.6rem;
     border-radius: 4px;
 }
 
-.test .navbar li a:hover{
+.container_nav .navbar li a:hover{
     background: var(--pink-mist);
     color: #fff;
 }

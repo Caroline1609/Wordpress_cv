@@ -12,7 +12,7 @@
 
 <header class="">
     <h1><?php the_title(); // affichage du titre ?></h1>
-    <nav class="test">
+    <nav class="container_nav">
         <?php 
             wp_nav_menu( array(
                 'theme_location' => 'menu-principal',

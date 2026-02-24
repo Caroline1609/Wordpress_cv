@@ -10,7 +10,6 @@ get_header();
             <?php the_excerpt(); // extrait du post ?> 
         </article>
         <?php the_post_thumbnail('thumbnail'); ?>
-        <hr>
         <article>
             <?php the_content(); // contenu du post ?> 
         </article>
