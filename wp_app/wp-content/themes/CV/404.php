@@ -1,8 +1,3 @@
 <?php get_header(); ?>
-
-<h1>404 - Page non trouvée</h1>
-<p>Désolé, la page que vous recherchez n'existe pas.</p>
-    
-
-
+<h1>Ceci est bien la page 404</h1>
 <?php get_footer(); ?>
