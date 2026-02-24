@@ -12,5 +12,4 @@ function navbar_setup(){
         'menu-principal' => 'Menu de Navigation Principal',
     ) );
 }
-add_action( 'after_setup_theme', 'navbar_setup' );
-
+add_action( 'init', 'navbar_setup' );
