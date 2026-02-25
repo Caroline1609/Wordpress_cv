@@ -1,5 +1,19 @@
 <?php
 
+function cb_cv_support()
+{
+    add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
+    add_theme_support('menus');
+    register_nav_menu('menu-principal', 'Menu de Navigation Principal');
+    register_nav_menu('footer-menu', 'Menu de Navigation Footer');
+    add_image_size('custom-size', 800, 600, true);
+}
+
+add_action('after_setup_theme', 'cb_cv_support');
+
+
+
 function cb_add_thumbnails()
 {
     add_theme_support('post-thumbnails');
