@@ -6,7 +6,7 @@ if (have_posts()):
         the_post(); ?>
 
         <h1><?php the_title(); ?></h1>
-        <p>
+        <p class="article_custom">
             <img src="<?php the_post_thumbnail_url(); ?>" alt="Image de l'article" style="width:100%; height : auto;" />
         </p>
         <?php the_content(); ?>

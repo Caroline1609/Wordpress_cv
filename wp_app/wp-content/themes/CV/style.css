@@ -68,3 +68,24 @@ main{
     width: 80%;
     margin: auto;
 }
+
+.article_custom{
+    color: red;
+}
+
+.message_url {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+
+}
+
+.message_url cite p {
+    font-size: 30px;
+}
+
+.message_url p {
+    color: 25px;
+}
