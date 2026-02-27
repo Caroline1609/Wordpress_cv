@@ -1,4 +1,4 @@
-:root{
+:root {
     --almond-silk: #c1aba6ff;
     --mauve-shadow: #533b4dff;
     --hot-pink-web: #f564a9ff;
@@ -7,11 +7,11 @@
 
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Arial', sans-serif;
     background-color: var(--almond-silk);
     color: var(--mauve-shadow);
@@ -19,19 +19,19 @@ body{
     padding: 0;
 }
 
-header{
+header {
 
     color: white;
     padding: 20px;
     text-align: center;
-    
-    
+
+
 }
 
-.container_nav{
+.container_nav {
 
     display: flex;
-justify-content: space-around;
+    justify-content: space-around;
 }
 
 header li {
@@ -39,7 +39,7 @@ header li {
 }
 
 
-.container_nav .navbar{
+.container_nav .navbar {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -48,28 +48,28 @@ header li {
     align-items: center;
 }
 
-.container_nav .navbar li{
+.container_nav .navbar li {
     margin: 0;
 }
 
-.container_nav .navbar li a{
+.container_nav .navbar li a {
     color: var(--mauve-shadow);
     text-decoration: none;
     padding: 0.35rem 0.6rem;
     border-radius: 4px;
 }
 
-.container_nav .navbar li a:hover{
+.container_nav .navbar li a:hover {
     background: var(--pink-mist);
     color: #fff;
 }
 
-main{
+main {
     width: 80%;
     margin: auto;
 }
 
-.article_custom{
+.article_custom {
     color: red;
 }
 
@@ -88,4 +88,171 @@ main{
 
 .message_url p {
     color: 25px;
+}
+
+
+
+/* Style de la page "DWWM page" */
+.dwwm-page {
+    padding: 60px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.dwwm-section {
+    background-color: var(--pink-mist);
+    margin: 30px auto;
+    padding: 40px 50px;
+    border-radius: 12px;
+    max-width: 850px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-left: 8px solid var(--hot-pink-web);
+    transition: transform 0.2s;
+}
+
+.dwwm-section:hover {
+    transform: translateY(-5px);
+}
+
+.dwwm-section h2 {
+    color: var(--mauve-shadow);
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dwwm-section h3 {
+    color: var(--mauve-shadow);
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.section-content {
+    color: var(--mauve-shadow);
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.dwwm-highlight {
+    background: linear-gradient(135deg, var(--pink-mist) 0%, var(--champagne-mist) 100%);
+    border-left-color: var(--hot-pink-web);
+}
+
+.dwwm-avantages {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+/* formulaire admin */
+.dwwm-field {
+    margin-bottom: 20px;
+}
+
+.dwwm-field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--mauve-shadow);
+}
+
+.dwwm-field textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Responsive: mobile-first adjustments */
+@media (max-width: 1024px) {
+    main {
+        width: 90%;
+    }
+
+    .dwwm-section {
+        padding: 36px 40px;
+        max-width: 760px;
+    }
+
+    .dwwm-section h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container_nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+        padding: 0 10px;
+    }
+
+    .container_nav .navbar {
+        flex-direction: column;
+        gap: 0;
+        align-items: stretch;
+    }
+
+    .container_nav .navbar li a {
+        display: block;
+        padding: 0.6rem 0.8rem;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .dwwm-page {
+        padding: 30px 0;
+    }
+
+    .dwwm-section {
+        padding: 20px;
+        margin: 18px auto;
+        border-radius: 8px;
+    }
+
+    .dwwm-section h2 {
+        font-size: 1.35rem;
+        margin-bottom: 12px;
+    }
+
+    .dwwm-section h3 {
+        font-size: 1.05rem;
+    }
+
+    .section-content {
+        font-size: 0.98rem;
+    }
+
+    .dwwm-section:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 420px) {
+    header {
+        padding: 12px;
+    }
+
+    .container_nav .navbar li a {
+        padding: 0.5rem;
+        font-size: 0.95rem;
+    }
+
+    .dwwm-section {
+        padding: 16px;
+    }
+
+    .dwwm-section h2 {
+        font-size: 1.15rem;
+    }
+
+    .message_url cite p {
+        font-size: 20px;
+    }
 }
