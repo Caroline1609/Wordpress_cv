@@ -100,7 +100,7 @@ main {
 
 .dwwm-section {
     background-color: var(--pink-mist);
-    margin: 30px auto;
+    margin: 30px;
     padding: 40px 50px;
     border-radius: 12px;
     max-width: 850px;
@@ -116,7 +116,7 @@ main {
 
 .dwwm-section h2 {
     color: var(--mauve-shadow);
-    font-size: 2rem;
+    font-size: 1000rem;
     margin-top: 0;
     margin-bottom: 25px;
     text-transform: uppercase;
